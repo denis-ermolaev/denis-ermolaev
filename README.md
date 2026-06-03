@@ -1,11 +1,16 @@
 # Личные проекты
-Личные pet‑проекты, на которых я отрабатываю навыки или реализую интересные идеи
 
-- **[shadcn-tailwind-ts-redux-router-i18next](https://github.com/denis-ermolaev/shadcn-tailwind-ts-redux-router-i18next)**  
+- [bulls-pipeline](https://github.com/denis-ermolaev/bulls-pipeline)
+  **Проект для обработки данных предоставленных ООО "Залесский фермер"**. **Создаёт инфраструктуру для геномной селекции молочных коров**. Снижение издержек за счет замены дорогого WGS-секвенирования на дешевые SNP-чипы с последующим восстановлением 10 млн+ маркеров через импутацию для оценки прибыли животных с рождения. Поиск генов влияющих на молочную продуктивность. Техническая реализация: pre-commit-хуки, инструменты Astral(uv,ruff,ty), запуск одной командой (контейниризация, скрипт настройки окружения), конфиг и его валидация через pydantic, многопроцессорность, управление проектом через Makefile, запуск внешних программ, работа с API, визуализация графиков и т.п. [Диплом, написанный по проекту](https://drive.google.com/file/d/1rs2w0yF5wqHGpT5uz7ovqB6i-O9B8u9b/view).
+
+- [shadcn-tailwind-ts-redux-router-i18next](https://github.com/denis-ermolaev/shadcn-tailwind-ts-redux-router-i18next)  
   Pet‑приложение на React + TypeScript, где я отрабатываю **современный фронтенд‑стек**: маршрутизацию (React Router), глобальное состояние (Redux Toolkit), локализацию (i18next), темы (light/dark), адаптивную верстку на Tailwind CSS + shadcn/ui, работу с мок‑данными и визуализацию через Recharts
 
-- **[flask_react_backend](https://github.com/denis-ermolaev/flask_react_backend)**  
+- [flask_react_backend](https://github.com/denis-ermolaev/flask_react_backend)  
   Тестовое задание. Бэкенд на Flask с RESTful API для управления пользователями: серверная пагинация, продвинутая валидация входных данных, отдельный слой работы с базой данных, глобальный обработчик ошибок и автотесты на pytest. Этот проект демонстрирует мои навыки **проектирования и реализации backend‑API**, отделения логики от инфраструктуры и написания тестов
 
-- **[flask_react_frontend](https://github.com/denis-ermolaev/flask_react_frontend)**  
+- [flask_react_frontend](https://github.com/denis-ermolaev/flask_react_frontend)  
   Фронтенд‑часть тестового задания на React: работа с REST‑API Flask‑бэкенда, управление состоянием через Context API, кастомный хук пагинации, Skeleton UI для индикации загрузки, обработка различных состояний (loading / error / empty), адаптивный интерфейс на React Bootstrap. Этот проект показывает мои **fullstack‑навыки**: интеграцию фронта и бэка
+
+- [content-filter-browser-extension](https://github.com/denis-ermolaev/content-filter-browser-extension)
+  Расширение для браузера google chrome для блокировки отвлекающих внимание сайтов. Заброшено из-за возможности в браузере отключать расширения, даже установленные через политики. Использует TypeScript, сборщик webpack. Блокирует сайты по суммированию слов-с весами. Последние получены с помощью генетического алгоритма, который подбирает их так, чтобы в текстах сайтов, помеченных для блокировки, сумма весов слов переходила заданный порог, а на сайтах помеченных, как безопасный, порог не был пройден.

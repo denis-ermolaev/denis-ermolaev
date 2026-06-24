@@ -2,3 +2,13 @@
 [![Email](./assets/icons/email.svg)](mailto:mrdenis.ppppr@mail.ru)
 [![GitHub](./assets/icons/github.svg)](https://github.com/denis-ermolaev)
 
+
+## Core Stack
+
+![Backend](./assets/icons/stack/backend.svg)
+
+![Data](./assets/icons/stack/data.svg)
+
+![Tools](./assets/icons/stack/tools.svg)
+
+![Frontend](./assets/icons/stack/frontend.svg)

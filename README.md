@@ -3,7 +3,7 @@
 [![GitHub](./assets/icons/github.svg)](https://github.com/denis-ermolaev)
 
 
-## Core Stack
+### Core Stack
 
 ![Backend](./assets/icons/stack/backend.svg)
 
@@ -13,18 +13,6 @@
 
 ![Frontend](./assets/icons/stack/frontend.svg)
 
-### Dev Metrics
 
 <!--START_SECTION:waka-->
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-```
-
-
 <!--END_SECTION:waka-->

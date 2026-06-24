@@ -13,13 +13,6 @@
 
 ![Frontend](https://img.shields.io/badge/Frontend-JavaScript%20%7C%20TypeScript%20%7C%20React%20%7C%20Tailwind-4CAF50?style=flat-square)
 
-### Dev Metrics
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
-
-## Coding Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=denis-ermolaev&api_domain=hackatime.hackclub.com&theme=transparent&layout=compact&langs_count=6&hide=Other,Git%20Config" />
-</p>

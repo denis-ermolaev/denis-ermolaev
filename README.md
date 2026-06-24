@@ -20,9 +20,6 @@
 ```text
 💬 Programming Languages: 
 No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
 ```
 
 

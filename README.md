@@ -16,22 +16,13 @@
 ### Dev Metrics
 
 <!--START_SECTION:waka-->
-**I'm a Night 🦉** 
-
-```text
-🌞 Morning                19 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.55 % 
-🌆 Daytime                83 commits          ███████░░░░░░░░░░░░░░░░░░   28.62 % 
-🌃 Evening                119 commits         ██████████░░░░░░░░░░░░░░░   41.03 % 
-🌙 Night                  69 commits          ██████░░░░░░░░░░░░░░░░░░░   23.79 % 
-```
-
-
 📊 **This Week I Spent My Time On** 
 
 ```text
-🕑︎ Time Zone: Europe/Kaliningrad
-
 💬 Programming Languages: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
 No Activity Tracked This Week
 ```
 

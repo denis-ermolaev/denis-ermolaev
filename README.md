@@ -12,3 +12,8 @@
 ![Tools](./assets/icons/stack/tools.svg)
 
 ![Frontend](./assets/icons/stack/frontend.svg)
+
+### Dev Metrics
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->

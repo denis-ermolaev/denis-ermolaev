@@ -1,5 +1,6 @@
 [![Telegram](./assets/icons/telegram.svg)](https://t.me/millenniumxx)
 [![Email](./assets/icons/email.svg)](mailto:mrdenis.ppppr@mail.ru)
+
 [![GitHub](./assets/icons/github.svg)](https://github.com/denis-ermolaev)
 [![Resume](https://img.shields.io/badge/RESUME-DENIS--ERMOLAEV-2b2b2b?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000)](https://rxresu.me/denis-ermolaev/resume-python-developer)
 

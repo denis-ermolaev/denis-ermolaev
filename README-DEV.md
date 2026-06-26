@@ -1,8 +1,6 @@
-[![Telegram](./assets/icons/telegram.svg)](https://t.me/millenniumxx)
-[![Email](./assets/icons/email.svg)](mailto:mrdenis.ppppr@mail.ru)
+[![Telegram](https://img.shields.io/badge/TELEGRAM-%40millenniumxx-2b2b2b?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000)](https://t.me/millenniumxx)[![Email](https://img.shields.io/badge/EMAIL-denis--ermolaev%40internet.ru-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000)](mailto:denis-ermolaev@internet.ru)
 
-[![GitHub](./assets/icons/github.svg)](https://github.com/denis-ermolaev)
-[![Resume](https://img.shields.io/badge/RESUME-DENIS--ERMOLAEV-2b2b2b?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000)](https://rxresu.me/denis-ermolaev/resume-python-developer)
+[![GitHub](https://img.shields.io/badge/GITHUB-denis--ermolaev-2b2b2b?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/denis-ermolaev)[![Resume](https://img.shields.io/badge/RESUME-DENIS--ERMOLAEV-2b2b2b?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000)](https://rxresu.me/denis-ermolaev/resume-python-developer)
 
 ### Core Stack
 

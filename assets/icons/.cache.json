@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "entries": {
+    "https://img.shields.io/badge/TELEGRAM-%40first__millennium-2b2b2b?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/telegram-badge.svg",
+      "url_hash": "f8939f6fdcb7560f5452f5c9687c42d466835acf618d2de2ca928b489a6d4d8a",
+      "downloaded_at": "2026-07-05T01:10:57Z"
+    },
+    "https://img.shields.io/badge/GITHUB-github.com-2b2b2b?style=for-the-badge&logo=github&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/github-badge.svg",
+      "url_hash": "da16d7e14ffb3bea94958a9cb3f4fc8701b82cd5c919567925db6a2584870c4e",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/EMAIL-denis--ermolaev%40internet.ru-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/email-badge.svg",
+      "url_hash": "bdf62e5d5135bf315856a782d572d06b9339ff6ba0baa63b45121b1c52afc331",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/RESUME-rxresu.me-2b2b2b?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/resume-badge.svg",
+      "url_hash": "c1c81aa841e8dffd6cf2253367c86fa15c4c9eb2eae4b3957dd133d1fc86e13e",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/Backend-Python%20%7C%20Django%20REST%20Framework%20%7C%20FastAPI%20%7C%20Flask%20%7C%20pydantic%20%7C%20PostgreSQL-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/backend.svg",
+      "url_hash": "77bfa4abdcb29b0748579475a85f38ed031c64b4da50c5db95dec51b1b80adc3",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/Data%20science-Pandas%20%7C%20Visualization%20%7C%20NumPy%20%7C%20Scikit--Learn-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/datascience.svg",
+      "url_hash": "bd6db9e66e0492c441af555c1827ee996b13b81e2c5408db3e9ee7e892af8a7d",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/Tools-Git%20%7C%20Docker%20%7C%20Linux%20%7C%20PyTest%20%7C%20pre--commit%20%7C%20Ruff%20%7C%20ty%20%7C%20uv-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/tools.svg",
+      "url_hash": "05f0cac067aa201313328da8e295c7d88bd275580a9247530df8fa9e7adaec55",
+      "downloaded_at": "2026-07-05T01:10:58Z"
+    },
+    "https://img.shields.io/badge/Frontend-JavaScript%20%7C%20TypeScript%20%7C%20React%20%7C%20Redux%20%7C%20Tailwind%20%7C%20shadcn/ui-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/frontend.svg",
+      "url_hash": "b4290a4f1020ddd87e213b01cde187ce330b89a62391ae44ebbdbd8c35102ad7",
+      "downloaded_at": "2026-07-05T01:10:59Z"
+    }
+  }
+}

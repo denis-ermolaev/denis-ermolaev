@@ -3,7 +3,7 @@ name: Wakatime Stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 18 * * *' # Раз в день в 18:30 UTC (21:30 по Москве)
+    - cron: '30 18 * * 0' # Раз неделю в ВС в 18:30
 
 jobs:
   update-readme:

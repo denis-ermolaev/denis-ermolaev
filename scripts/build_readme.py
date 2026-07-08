@@ -337,11 +337,11 @@ def _define_badges() -> Tuple[List[Badge], str]:
     # ── Стековые бейджи ────────────────────────────────────
     be = stack_badge(
         "Backend",
-        "Python | Django REST Framework | FastAPI | Flask | PostgreSQL",
+        "Python | FastAPI | Django REST Framework | Flask | PostgreSQL",
     )
     ds = stack_badge(
         "Data science",
-        "Pandas | NumPy | Visualization | Scikit-Learn",
+        "Pandas | NumPy | Scikit-Learn | Visualization",
     )
     tl = stack_badge(
         "Tools",
@@ -349,7 +349,7 @@ def _define_badges() -> Tuple[List[Badge], str]:
     )
     fe = stack_badge(
         "Frontend",
-        "JavaScript | TypeScript | React | Redux | Tailwind | shadcn/ui",
+        "TypeScript | NextJS | React | Redux | Tailwind | shadcn/ui",
     )
 
     all_badges = [tg, gh, em, rs, be, ds, tl, fe]

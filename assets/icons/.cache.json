@@ -55,6 +55,21 @@
       "local_path": "assets/icons/stack/tools.svg",
       "url_hash": "a8f3129d73ef42b050fc72e601b9be32e82d775eb74ed45c7b181ee512ca0128",
       "downloaded_at": "2026-07-05T01:17:02Z"
+    },
+    "https://img.shields.io/badge/Backend-Python%20%7C%20FastAPI%20%7C%20Django%20REST%20Framework%20%7C%20Flask%20%7C%20PostgreSQL-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/backend.svg",
+      "url_hash": "5da3efdf21a522f3661a89c55bd1468d8c7c88f34ad730cd01388b9b5ff09bf5",
+      "downloaded_at": "2026-07-08T12:48:46Z"
+    },
+    "https://img.shields.io/badge/Data%20science-Pandas%20%7C%20NumPy%20%7C%20Scikit--Learn%20%7C%20Visualization-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/datascience.svg",
+      "url_hash": "cccc961fd768ed945fd3d0f00e975b51f039a5c1fb2de646cb0b46dd93d7b8db",
+      "downloaded_at": "2026-07-08T12:48:47Z"
+    },
+    "https://img.shields.io/badge/Frontend-TypeScript%20%7C%20NextJS%20%7C%20React%20%7C%20Redux%20%7C%20Tailwind%20%7C%20shadcn/ui-2b2b2b?style=flat-square&labelColor=000000": {
+      "local_path": "assets/icons/stack/frontend.svg",
+      "url_hash": "8c34f71ddb0f27e492400cbf72eec56e977606d100fdc74dffd565a4025b8301",
+      "downloaded_at": "2026-07-08T12:48:47Z"
     }
   }
 }

@@ -1,18 +1,18 @@
 <div align="center">
 <div>
-<a href="https://t.me/first_millennium" style="text-decoration: none;">
+<a href="https://t.me/first_millennium" style="text-decoration: none;font-size: 0; line-height: 0;">
 <img src="assets/icons/telegram-badge.svg" alt="telegram">
 </a>
-<a href="https://github.com/denis-ermolaev" style="text-decoration: none;">
+<a href="https://github.com/denis-ermolaev" style="text-decoration: none;font-size: 0; line-height: 0;">
 <img src="assets/icons/badge-c67655263a4d.svg" alt="github">
 </a>
 </div>
 
 <div>
-<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;">
+<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;">
 <img src="assets/icons/email-badge.svg" alt="email">
 </a>
-<a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;">
+<a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;">
 <img src="assets/icons/badge-23ff642881dc.svg" alt="resume">
 </a>
 </div>

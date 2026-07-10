@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """
-build_readme.py — генератор README.md из DSL-описания бейджей.
-
-Этот скрипт является ЕДИНСТВЕННЫМ источником истины для содержимого README.md.
-Он заменяет собой README-DEV.md и AGENTS.md.
+build_readme.py — генератор README.md из README-DEV.md.
 
 Что делает:
-  1. Определяет бейджи через удобный DSL (contact_badge / stack_badge)
-  2. Генерирует shield.io URL и определяет локальные пути для SVG
-  3. Скачивает недостающие SVG (с кэшированием в assets/icons/.cache.json)
-  4. Собирает markdown-текст с локальными путями к SVG
-  5. Переносит waka-секцию из старого README.md (если есть)
-  6. Записывает README.md
+  1. Читает README-DEV.md (источник истины для контента)
+  2. Находит все shield.io и custom-icon-badges.demolab.com URL в markdown
+  3. Скачивает недостающие SVG в assets/icons/ (с кэшированием)
+  4. Заменяет внешние URL на локальные пути
+  5. Записывает результат в README.md
 
 Использование:
     python scripts/build_readme.py
+
+Условные обозначения:
+    README-DEV.md  —  исходный файл с внешними ссылками на бейджи
+    README.md      —  результат (ссылки заменены на локальные SVG)
 """
 
 from __future__ import annotations
@@ -22,12 +22,10 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-import urllib.parse
 import urllib.request
-from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Set
 
 # ═══════════════════════════════════════════════════════════════
 #  КОНФИГУРАЦИЯ
@@ -35,154 +33,14 @@ from typing import Dict, List, Optional, Tuple
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 CACHE_FILE = BASE_DIR / "assets" / "icons" / ".cache.json"
+DEV_README_PATH = BASE_DIR / "README-DEV.md"
 README_PATH = BASE_DIR / "README.md"
 
-WAKA_START = "<!--START_SECTION:waka-->"
-WAKA_END = "<!--END_SECTION:waka-->"
-
-# Цвета shield.io по умолчанию
-CONTACT_COLOR = "2b2b2b"  # цвет сообщения (правая часть)
-CONTACT_LABEL_COLOR = "000000"  # цвет label (левая часть)
-STACK_COLOR = "2b2b2b"
-STACK_LABEL_COLOR = "000000"
-
-# Маппинг label -> локальный путь для контактных бейджей
-CONTACT_PATHS: Dict[str, str] = {
-    "TELEGRAM": "assets/icons/telegram-badge.svg",
-    "GITHUB": "assets/icons/github-badge.svg",
-    "EMAIL": "assets/icons/email-badge.svg",
-    "RESUME": "assets/icons/resume-badge.svg",
+# Домены, SVG с которых нужно скачивать локально
+ALLOWED_DOMAINS: Set[str] = {
+    "img.shields.io",
+    "custom-icon-badges.demolab.com",
 }
-
-# Маппинг label -> локальный путь для стековых бейджей
-STACK_PATHS: Dict[str, str] = {
-    "Backend": "assets/icons/stack/backend.svg",
-    "Data science": "assets/icons/stack/datascience.svg",
-    "Tools": "assets/icons/stack/tools.svg",
-    "Frontend": "assets/icons/stack/frontend.svg",
-}
-
-
-# ═══════════════════════════════════════════════════════════════
-#  ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
-# ═══════════════════════════════════════════════════════════════
-
-
-def _shield_escape(text: str) -> str:
-    """
-    Экранирует текст для вставки в URL shield.io.
-
-    Shield.io использует '-' как разделитель между label/message/color,
-    а '_' как указатель пробела. Поэтому:
-      - литеральный '-' -> '--'
-      - литеральный '_' -> '__'
-    Остальное — стандартный URL-encode.
-    """
-    text = text.replace("-", "--")
-    text = text.replace("_", "__")
-    # quote по умолчанию НЕ трогает '-', '_', '.', '~'
-    return urllib.parse.quote(text)
-
-
-def _make_shield_url(
-    label: str,
-    message: str,
-    color: str,
-    *,
-    style: str = "flat-square",
-    logo: Optional[str] = None,
-    logo_color: Optional[str] = None,
-    label_color: Optional[str] = None,
-) -> str:
-    """Собирает полный URL для shield.io бейджа."""
-    el = _shield_escape(label)
-    em = _shield_escape(message)
-    url = f"https://img.shields.io/badge/{el}-{em}-{color}"
-    params: List[str] = [f"style={style}"]
-    if logo:
-        params.append(f"logo={logo}")
-    if logo_color:
-        params.append(f"logoColor={logo_color}")
-    if label_color:
-        params.append(f"labelColor={label_color}")
-    return url + "?" + "&".join(params)
-
-
-def _contact_local_path(label: str) -> str:
-    """Определяет локальный путь для контактного бейджа."""
-    if label in CONTACT_PATHS:
-        return CONTACT_PATHS[label]
-    safe = label.lower().replace(" ", "-")
-    return f"assets/icons/{safe}-badge.svg"
-
-
-def _stack_local_path(label: str) -> str:
-    """Определяет локальный путь для стекового бейджа."""
-    if label in STACK_PATHS:
-        return STACK_PATHS[label]
-    safe = label.lower().replace(" ", "-")
-    return f"assets/icons/stack/{safe}.svg"
-
-
-# ═══════════════════════════════════════════════════════════════
-#  DSL — БЕЙДЖИ
-# ═══════════════════════════════════════════════════════════════
-
-
-@dataclass
-class Badge:
-    """Один бейдж: URL для скачивания + локальный путь + markdown."""
-
-    shield_url: str  # полный shield.io URL
-    local_path: str  # локальный путь к SVG (относительно корня)
-    markdown: str  # готовая markdown-строка (с локальным путём)
-    label: str = field(repr=False)  # для отладки
-
-
-def contact_badge(
-    label: str,
-    message: str,
-    logo: str,
-    url: str,
-    *,
-    color: str = CONTACT_COLOR,
-    label_color: str = CONTACT_LABEL_COLOR,
-) -> Badge:
-    """Контактный бейдж (с логотипом, for-the-badge, ссылка)."""
-    shield_url = _make_shield_url(
-        label,
-        message,
-        color,
-        style="for-the-badge",
-        logo=logo,
-        logo_color="white",
-        label_color=label_color,
-    )
-    local_path = _contact_local_path(label)
-    md = f"[![{label}]({local_path})]({url})"
-    return Badge(shield_url=shield_url, local_path=local_path, markdown=md, label=label)
-
-
-def stack_badge(
-    label: str,
-    message: str,
-    *,
-    color: str = STACK_COLOR,
-    label_color: str = STACK_LABEL_COLOR,
-    url: str = "#",
-) -> Badge:
-    """Стековый бейдж (без логотипа, flat-square, без ссылки)."""
-    shield_url = _make_shield_url(
-        label,
-        message,
-        color,
-        style="flat-square",
-        label_color=label_color,
-    )
-    local_path = _stack_local_path(label)
-    md = f"[![{label}]({local_path})]({url})"
-    return Badge(shield_url=shield_url, local_path=local_path, markdown=md, label=label)
-
 
 # ═══════════════════════════════════════════════════════════════
 #  КЭШ И СКАЧИВАНИЕ SVG
@@ -240,139 +98,53 @@ def _download_svg(url: str, local_path: str) -> bool:
         return False
 
 
-def _sync_cache(badges: List[Badge], cache: dict) -> None:
+def _local_path_for_url(url: str, cache: dict) -> str:
     """
-    Сверяет URL бейджей с кэшем.
-    Для новых и изменившихся URL — скачивает SVG и добавляет запись в кэш.
+    Определяет локальный путь для URL.
+
+    Если URL уже есть в кэше — возвращает сохранённый путь.
+    Иначе генерирует путь на основе хэша URL.
     """
-    entries = cache.setdefault("entries", {})
+    entries = cache.get("entries", {})
+    if url in entries:
+        return entries[url]["local_path"]
 
-    for badge in badges:
-        if badge.shield_url in entries:
-            # Уже в кэше — пропускаем
-            continue
-
-        print(f"  → {badge.label}: {badge.shield_url[:70]}...")
-        if _download_svg(badge.shield_url, badge.local_path):
-            entries[badge.shield_url] = {
-                "local_path": badge.local_path,
-                "url_hash": _url_sha256(badge.shield_url),
-                "downloaded_at": datetime.now(timezone.utc).strftime(
-                    "%Y-%m-%dT%H:%M:%SZ"
-                ),
-            }
+    # Генерируем короткий хэш (12 символов) для имени файла
+    h = _url_sha256(url)[:12]
+    return f"assets/icons/badge-{h}.svg"
 
 
 # ═══════════════════════════════════════════════════════════════
-#  WAKA-СЕКЦИЯ
+#  ПАРСИНГ README-DEV.md
 # ═══════════════════════════════════════════════════════════════
 
-
-def _extract_waka(text: str) -> Optional[str]:
-    """Извлекает waka-секцию с маркерами. Возвращает None, если секции нет."""
-    pattern = rf"{re.escape(WAKA_START)}.*?{re.escape(WAKA_END)}"
-    m = re.search(pattern, text, re.DOTALL)
-    return m.group(0) if m else None
+# Регекспы для поиска URL в markdown ![alt](url) и HTML <img src="url">
+_IMAGE_RE = re.compile(r"!\[.*?\]\(([^)]+)\)")
+_HTML_IMG_RE = re.compile(r'<img\s[^>]*src="([^"]+)"')
 
 
-def _inject_waka(text: str, waka_section: Optional[str]) -> str:
+def _find_badge_urls(text: str) -> List[str]:
     """
-    Вставляет waka-секцию в текст.
-    Если в тексте уже есть маркеры — заменяет содержимое.
-    Если маркеров нет — добавляет секцию в конец.
+    Находит все URL изображений из разрешённых доменов.
+
+    Ищет конструкцию ![alt](url) (как отдельно, так и внутри
+    Markdown-ссылки [![alt](url)](link)), а также <img src="url">.
     """
-    if waka_section is None:
-        return text
+    found: List[str] = []
+    seen: Set[str] = set()
 
-    if WAKA_START in text and WAKA_END in text:
-        return re.sub(
-            rf"{re.escape(WAKA_START)}.*?{re.escape(WAKA_END)}",
-            waka_section,
-            text,
-            flags=re.DOTALL,
-        )
-    else:
-        return text.rstrip() + "\n\n" + waka_section + "\n"
+    for pattern in (_IMAGE_RE, _HTML_IMG_RE):
+        for match in pattern.finditer(text):
+            url = match.group(1)
+            if url in seen:
+                continue
 
+            # Проверяем, относится ли URL к разрешённому домену
+            if any(domain in url for domain in ALLOWED_DOMAINS):
+                found.append(url)
+                seen.add(url)
 
-# ═══════════════════════════════════════════════════════════════
-#  ФОРМИРОВАНИЕ СОДЕРЖИМОГО README
-# ═══════════════════════════════════════════════════════════════
-
-
-def _define_badges() -> Tuple[List[Badge], str]:
-    """
-    ЕДИНСТВЕННОЕ МЕСТО, ГДЕ ОПРЕДЕЛЯЮТСЯ БЕЙДЖИ.
-    Меняйте содержимое README здесь.
-
-    Возвращает:
-      (all_badges, markdown_text)
-    """
-    # ── Контактные бейджи ──────────────────────────────────
-    tg = contact_badge(
-        "TELEGRAM",
-        "@first_millennium",
-        "telegram",
-        "https://t.me/millenniumxx",
-    )
-    gh = contact_badge(
-        "GITHUB",
-        "github.com",
-        "github",
-        "https://github.com/denis-ermolaev",
-    )
-    em = contact_badge(
-        "EMAIL",
-        "denis-ermolaev@internet.ru",
-        "gmail",
-        "mailto:denis-ermolaev@internet.ru",
-    )
-    rs = contact_badge(
-        "RESUME",
-        "rxresu.me",
-        "googledocs",
-        "https://rxresu.me/denis-ermolaev/resume-python-developer",
-    )
-
-    # ── Стековые бейджи ────────────────────────────────────
-    be = stack_badge(
-        "Backend",
-        "Python | FastAPI | Django REST Framework | Flask | PostgreSQL",
-    )
-    ds = stack_badge(
-        "Data science",
-        "Pandas | NumPy | Scikit-Learn | Visualization",
-    )
-    tl = stack_badge(
-        "Tools",
-        "Linux | Git | Docker | PyTest | pre-commit | Ruff | ty | uv",
-    )
-    fe = stack_badge(
-        "Frontend",
-        "TypeScript | NextJS | React | Redux | Tailwind | shadcn/ui",
-    )
-
-    all_badges = [tg, gh, em, rs, be, ds, tl, fe]
-
-    # ═══ СБОРКА MARKDOWN ═══
-    md = f"""{tg.markdown}{gh.markdown}
-
-{em.markdown}{rs.markdown}
-
-### Core Stack
-
-{be.markdown}
-
-{ds.markdown}
-
-{tl.markdown}
-
-{fe.markdown}
-
-{WAKA_START}
-{WAKA_END}
-"""
-    return all_badges, md
+    return found
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -382,49 +154,86 @@ def _define_badges() -> Tuple[List[Badge], str]:
 
 def main() -> None:
     print("=" * 60)
-    print("  build_readme.py — генерация README.md")
+    print("  build_readme.py — генерация README.md из README-DEV.md")
     print("=" * 60)
 
-    # 1. Определяем бейджи и markdown
-    print("\n📝 Определение бейджей...")
-    badges, new_markdown = _define_badges()
-    print(f"   Всего бейджей: {len(badges)}")
-    for b in badges:
-        print(f"   • {b.label:20s} → {b.local_path}")
+    # 1. Проверяем, что README-DEV.md существует
+    if not DEV_README_PATH.exists():
+        print(f"\n❌ Ошибка: {DEV_README_PATH.relative_to(BASE_DIR)} не найден!")
+        print("   Создайте README-DEV.md с markdown-контентом и внешними URL бейджей.")
+        return
 
-    # 2. Загружаем кэш
-    print("\n💾 Загрузка кэша...")
+    # 2. Читаем исходный контент
+    print(f"\n📖 Чтение {DEV_README_PATH.relative_to(BASE_DIR)}...")
+    content = DEV_README_PATH.read_text(encoding="utf-8")
+    print(f"   {len(content)} символов")
+
+    # 3. Находим все badge URL
+    print(f"\n🔍 Поиск badge URL (домены: {', '.join(ALLOWED_DOMAINS)})...")
+    urls = _find_badge_urls(content)
+    print(f"   Найдено URL: {len(urls)}")
+    for url in urls:
+        print(f"   • {url[:80]}...")
+
+    if not urls:
+        print("\n⚠️  Badge URL не найдены. README.md будет скопирован как есть.")
+
+    # 4. Загружаем кэш и скачиваем новые SVG
+    print(f"\n💾 Загрузка кэша ({CACHE_FILE.relative_to(BASE_DIR)})...")
     cache = _load_cache()
-    print(f"   Записей в кэше: {len(cache.get('entries', {}))}")
+    cached_count = len(cache.get("entries", {}))
+    print(f"   Записей в кэше: {cached_count}")
 
-    # 3. Скачиваем новые SVG
+    # Карта: URL -> локальный путь
+    url_to_local: Dict[str, str] = {}
+
     print("\n📥 Синхронизация SVG...")
-    _sync_cache(badges, cache)
-    print("   Готово.")
+    new_downloads = 0
+    for url in urls:
+        local_path = _local_path_for_url(url, cache)
+        url_to_local[url] = local_path
 
-    # 4. Перенос waka-секции из старого README.md
-    print("\n🔄 Перенос waka-секции...")
-    old_waka = None
-    if README_PATH.exists():
-        old_text = README_PATH.read_text(encoding="utf-8")
-        old_waka = _extract_waka(old_text)
-        if old_waka:
-            print("   ✓ waka-секция найдена, переношу...")
-        else:
-            print("   • waka-секция не найдена")
-    else:
-        print("   • README.md ещё не существует")
-    new_markdown = _inject_waka(new_markdown, old_waka)
+        entries = cache.setdefault("entries", {})
 
-    # 5. Запись README.md
+        # Пропускаем, если уже в кэше и файл существует
+        if url in entries:
+            if (BASE_DIR / entries[url]["local_path"]).exists():
+                continue
+            else:
+                print(f"  → {url[:60]}... (файл отсутствует, перекачиваю)")
+
+        # Скачиваем
+        print(f"  → {url[:60]}...")
+        if _download_svg(url, local_path):
+            entries[url] = {
+                "local_path": local_path,
+                "url_hash": _url_sha256(url),
+                "downloaded_at": datetime.now(timezone.utc).strftime(
+                    "%Y-%m-%dT%H:%M:%SZ"
+                ),
+            }
+            new_downloads += 1
+
+    print(f"   Скачано новых: {new_downloads}, из кэша: {len(urls) - new_downloads}")
+
+    # 5. Заменяем внешние URL на локальные пути
+    print("\n🔄 Замена URL на локальные пути...")
+    for url, local_path in url_to_local.items():
+        content = content.replace(url, local_path)
+    print(f"   Заменено URL: {len(url_to_local)}")
+
+    # 6. Записываем README.md
     print(f"\n📄 Запись {README_PATH.relative_to(BASE_DIR)}...")
-    README_PATH.write_text(new_markdown, encoding="utf-8")
-    print(f"   ✓ {len(new_markdown)} символов")
+    README_PATH.write_text(content, encoding="utf-8")
+    print(f"   ✓ {len(content)} символов")
 
-    # 6. Сохранение кэша
-    print("\n💾 Сохранение кэша...")
-    _save_cache(cache)
-    print(f"   ✓ {CACHE_FILE.relative_to(BASE_DIR)}")
+    # 7. Сохраняем кэш
+    if new_downloads > 0:
+        print("\n💾 Сохранение кэша...")
+        _save_cache(cache)
+        print(f"   ✓ {CACHE_FILE.relative_to(BASE_DIR)}")
+    else:
+        print("\n💾 Кэш не изменён, пропускаю сохранение.")
 
     print("\n" + "=" * 60)
     print("  ✅ Готово! README.md сгенерирован.")

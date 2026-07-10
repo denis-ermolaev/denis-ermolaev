@@ -70,6 +70,16 @@
       "local_path": "assets/icons/stack/frontend.svg",
       "url_hash": "8c34f71ddb0f27e492400cbf72eec56e977606d100fdc74dffd565a4025b8301",
       "downloaded_at": "2026-07-08T12:48:47Z"
+    },
+    "https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/badge-c67655263a4d.svg",
+      "url_hash": "c67655263a4d355ba5653e07c23d81583431fe61167f5273d98fe1c49d956d58",
+      "downloaded_at": "2026-07-09T23:43:37Z"
+    },
+    "https://img.shields.io/badge/RESUME-000000?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/badge-23ff642881dc.svg",
+      "url_hash": "23ff642881dc4043d3b6caf6060d8ef2504022cf62c0517a82946f350710f72f",
+      "downloaded_at": "2026-07-09T23:43:37Z"
     }
   }
 }

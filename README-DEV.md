@@ -50,5 +50,7 @@
     <img src="https://img.shields.io/badge/shadcn%2Fui-2b2b2b?logo=shadcnui&logoColor=white" alt="shadcn/ui">
 </div>
 
+<br>
+
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->

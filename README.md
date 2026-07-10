@@ -50,6 +50,8 @@
     <img src="assets/icons/badge-1b75ff87d692.svg" alt="shadcn/ui">
 </div>
 
+<br>
+
 <!--START_SECTION:waka-->
 📊 **This Week I Spent My Time On** 
 

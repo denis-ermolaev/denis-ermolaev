@@ -1,20 +1,10 @@
 <div align="center">
 <div>
-<a href="https://t.me/first_millennium" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;">
-<img src="https://img.shields.io/badge/TELEGRAM-%40first__millennium-2b2b2b?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" style="display: block;" alt="telegram">
-</a>
-<a href="https://github.com/denis-ermolaev" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;">
-<img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" style="display: block;" alt="github">
-</a>
+<a href="https://t.me/first_millennium" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/TELEGRAM-%40first__millennium-2b2b2b?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" style="display: block;" alt="telegram"></a><a href="https://github.com/denis-ermolaev" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" style="display: block;" alt="github"></a>
 </div>
 
 <div>
-<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;">
-<img src="https://img.shields.io/badge/EMAIL-denis--ermolaev%40internet.ru-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" style="display: block;" alt="email">
-</a>
-<a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;">
-<img src="https://img.shields.io/badge/RESUME-000000?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000" style="display: block;" alt="resume">
-</a>
+<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/EMAIL-denis--ermolaev%40internet.ru-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" style="display: block;" alt="email"></a><a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/RESUME-000000?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000" style="display: block;" alt="resume"></a>
 </div>
 
 </div>

@@ -11,8 +11,8 @@
 
 ### Core Stack
 
-<div style="display: flex; gap: 6px; margin-bottom: 4px;">
-    <span><b>Backend:</b></span>
+<div style="display: flex; gap: 6px; margin-bottom: 6px; align-items: center;">
+    <span style="line-height: 1;"><b>Backend:</b></span>
     <img src="https://img.shields.io/badge/Python-2b2b2b?logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/FastAPI-2b2b2b?logo=fastapi&logoColor=white" alt="FastAPI">
     <img src="https://img.shields.io/badge/Django-2b2b2b?logo=django&logoColor=white" alt="Django REST Framework">
@@ -20,16 +20,16 @@
     <img src="https://img.shields.io/badge/PostgreSQL-2b2b2b?logo=postgresql&logoColor=white" alt="PostgreSQL">
 </div>
 
-<div style="display: flex; gap: 6px; margin-bottom: 4px;">
-    <span><b>Data Science:</b></span>
+<div style="display: flex; gap: 6px; margin-bottom: 6px; align-items: center;">
+    <span style="line-height: 1;"><b>Data Science:</b></span>
     <img src="https://img.shields.io/badge/Pandas-2b2b2b?logo=pandas&logoColor=white" alt="Pandas">
     <img src="https://img.shields.io/badge/NumPy-2b2b2b?logo=numpy&logoColor=white" alt="NumPy">
     <img src="https://img.shields.io/badge/Scikit--Learn-2b2b2b?logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
     <img src="https://img.shields.io/badge/Visualization-2b2b2b?logo=plotly&logoColor=white" alt="Visualization">
 </div>
 
-<div style="display: flex; gap: 6px; margin-bottom: 4px;">
-    <span><b>Tools:</b></span>
+<div style="display: flex; gap: 6px; margin-bottom: 6px; align-items: center;">
+    <span style="line-height: 1;"><b>Tools:</b></span>
     <img src="https://img.shields.io/badge/Linux-2b2b2b?logo=linux&logoColor=white" alt="Linux">
     <img src="https://img.shields.io/badge/Git-2b2b2b?logo=git&logoColor=white" alt="Git">
     <img src="https://img.shields.io/badge/Docker-2b2b2b?logo=docker&logoColor=white" alt="Docker">
@@ -40,8 +40,8 @@
     <img src="https://img.shields.io/badge/uv-2b2b2b?logo=uv&logoColor=white" alt="uv">
 </div>
 
-<div style="display: flex; gap: 6px; margin-bottom: 4px;">
-    <span><b>Frontend:</b></span>
+<div style="display: flex; gap: 6px; margin-bottom: 6px; align-items: center;">
+    <span style="line-height: 1;"><b>Frontend:</b></span>
     <img src="https://img.shields.io/badge/TypeScript-2b2b2b?logo=typescript&logoColor=white" alt="TypeScript">
     <img src="https://img.shields.io/badge/Next.js-2b2b2b?logo=nextdotjs&logoColor=white" alt="Next.js">
     <img src="https://img.shields.io/badge/React-2b2b2b?logo=react&logoColor=white" alt="React">

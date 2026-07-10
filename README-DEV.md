@@ -11,13 +11,52 @@
 
 ### Core Stack
 
-[![Backend](https://img.shields.io/badge/Backend-Python%20%7C%20FastAPI%20%7C%20Django%20REST%20Framework%20%7C%20Flask%20%7C%20PostgreSQL-2b2b2b?style=flat-square&labelColor=000000)](#)
+<div style="display: flex; gap: 6px; margin-bottom: 4px;">
+    <span><b>Backend:</b></span>
+    <div>
+        <img src="https://img.shields.io/badge/Python-2b2b2b?logo=python&logoColor=white" alt="Python">
+        <img src="https://img.shields.io/badge/FastAPI-2b2b2b?logo=fastapi&logoColor=white" alt="FastAPI">
+        <img src="https://img.shields.io/badge/Django-2b2b2b?logo=django&logoColor=white" alt="Django REST Framework">
+        <img src="https://img.shields.io/badge/Flask-2b2b2b?logo=flask&logoColor=white" alt="Flask">
+        <img src="https://img.shields.io/badge/PostgreSQL-2b2b2b?logo=postgresql&logoColor=white" alt="PostgreSQL">
+    </div>
+</div>
 
-[![Data science](https://img.shields.io/badge/Data%20science-Pandas%20%7C%20NumPy%20%7C%20Scikit--Learn%20%7C%20Visualization-2b2b2b?style=flat-square&labelColor=000000)](#)
+<div style="display: flex; gap: 6px; margin-bottom: 4px;">
+    <span><b>Data Science:</b></span>
+    <div>
+        <img src="https://img.shields.io/badge/Pandas-2b2b2b?logo=pandas&logoColor=white" alt="Pandas">
+        <img src="https://img.shields.io/badge/NumPy-2b2b2b?logo=numpy&logoColor=white" alt="NumPy">
+        <img src="https://img.shields.io/badge/Scikit--Learn-2b2b2b?logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
+        <img src="https://img.shields.io/badge/Visualization-2b2b2b?logo=plotly&logoColor=white" alt="Visualization">
+    </div>
+</div>
 
-[![Tools](https://img.shields.io/badge/Tools-Linux%20%7C%20Git%20%7C%20Docker%20%7C%20PyTest%20%7C%20pre--commit%20%7C%20Ruff%20%7C%20ty%20%7C%20uv-2b2b2b?style=flat-square&labelColor=000000)](#)
+<div style="display: flex; gap: 6px; margin-bottom: 4px;">
+    <span><b>Tools:</b></span>
+    <div>
+        <img src="https://img.shields.io/badge/Linux-2b2b2b?logo=linux&logoColor=white" alt="Linux">
+        <img src="https://img.shields.io/badge/Git-2b2b2b?logo=git&logoColor=white" alt="Git">
+        <img src="https://img.shields.io/badge/Docker-2b2b2b?logo=docker&logoColor=white" alt="Docker">
+        <img src="https://img.shields.io/badge/PyTest-2b2b2b?logo=pytest&logoColor=white" alt="PyTest">
+        <img src="https://img.shields.io/badge/pre--commit-2b2b2b?logo=pre-commit&logoColor=white" alt="pre-commit">
+        <img src="https://img.shields.io/badge/Ruff-2b2b2b?logo=ruff&logoColor=white" alt="Ruff">
+        <img src="https://img.shields.io/badge/ty-2b2b2b?logo=ty&logoColor=white" alt="ty">
+        <img src="https://img.shields.io/badge/uv-2b2b2b?logo=uv&logoColor=white" alt="uv">
+    </div>
+</div>
 
-[![Frontend](https://img.shields.io/badge/Frontend-TypeScript%20%7C%20NextJS%20%7C%20React%20%7C%20Redux%20%7C%20Tailwind%20%7C%20shadcn/ui-2b2b2b?style=flat-square&labelColor=000000)](#)
+<div style="display: flex; gap: 6px; margin-bottom: 4px;">
+    <span><b>Frontend:</b></span>
+    <div>
+        <img src="https://img.shields.io/badge/TypeScript-2b2b2b?logo=typescript&logoColor=white" alt="TypeScript">
+        <img src="https://img.shields.io/badge/Next.js-2b2b2b?logo=nextdotjs&logoColor=white" alt="Next.js">
+        <img src="https://img.shields.io/badge/React-2b2b2b?logo=react&logoColor=white" alt="React">
+        <img src="https://img.shields.io/badge/Redux-2b2b2b?logo=redux&logoColor=white" alt="Redux">
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-2b2b2b?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+        <img src="https://img.shields.io/badge/shadcn%2Fui-2b2b2b?logo=shadcnui&logoColor=white" alt="shadcn/ui">
+    </div>
+</div>
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->

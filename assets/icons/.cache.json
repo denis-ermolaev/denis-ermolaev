@@ -80,6 +80,136 @@
       "local_path": "assets/icons/badge-23ff642881dc.svg",
       "url_hash": "23ff642881dc4043d3b6caf6060d8ef2504022cf62c0517a82946f350710f72f",
       "downloaded_at": "2026-07-09T23:43:37Z"
+    },
+    "https://img.shields.io/badge/FastAPI-2b2b2b?logo=fastapi&logoColor=white": {
+      "local_path": "assets/icons/badge-589fc2ebd456.svg",
+      "url_hash": "589fc2ebd456b166974ef80bb388c31156fe713421524d4c30d608b89afa7665",
+      "downloaded_at": "2026-07-10T03:02:35Z"
+    },
+    "https://img.shields.io/badge/Python-2b2b2b?logo=python&logoColor=white": {
+      "local_path": "assets/icons/badge-74dc3f788c7b.svg",
+      "url_hash": "74dc3f788c7b85a6776b7a35de6e06a73b60109c5cb0c0e3665a1c7d4d1b43fe",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/Django-2b2b2b?logo=django&logoColor=white": {
+      "local_path": "assets/icons/badge-d4bb4838b499.svg",
+      "url_hash": "d4bb4838b499440ec2a17755b048439ec2bcfa18e9c7d20faa40d63d84e40fc0",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/Flask-2b2b2b?logo=flask&logoColor=white": {
+      "local_path": "assets/icons/badge-f6cd8d9704ef.svg",
+      "url_hash": "f6cd8d9704efcc8ff489c7db37f7e4b194e08e73db8cec9b962e69ff4a592fc6",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/PostgreSQL-2b2b2b?logo=postgresql&logoColor=white": {
+      "local_path": "assets/icons/badge-a4d09a6a67f7.svg",
+      "url_hash": "a4d09a6a67f78c8aaccddc363f44a69d74dafffa94a5ef65bf8036b003fa6594",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/Pandas-2b2b2b?logo=pandas&logoColor=white": {
+      "local_path": "assets/icons/badge-2d29dfcb565c.svg",
+      "url_hash": "2d29dfcb565c3c95b2439dc0730d3570139cc151a6b9a361716c3871744b2788",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/NumPy-2b2b2b?logo=numpy&logoColor=white": {
+      "local_path": "assets/icons/badge-cc60bba7e13d.svg",
+      "url_hash": "cc60bba7e13d826c49f7fd7f02062d719cffeb46dae909eb1f3e006d97a51a41",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/Scikit--Learn-2b2b2b?logo=scikit-learn&logoColor=white": {
+      "local_path": "assets/icons/badge-3115bd32cd61.svg",
+      "url_hash": "3115bd32cd619f024994b52f84d7b5a921be4ce4ec081ec7dc3b7d3e01bf1f41",
+      "downloaded_at": "2026-07-10T03:02:36Z"
+    },
+    "https://img.shields.io/badge/Visualization-2b2b2b?logo=plotly&logoColor=white": {
+      "local_path": "assets/icons/badge-f340730f3644.svg",
+      "url_hash": "f340730f3644d8854834c57e106a279f6b314e8f153d47f9e49c41af19d129e9",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/Linux-2b2b2b?logo=linux&logoColor=white": {
+      "local_path": "assets/icons/badge-1cffcc2ee1b9.svg",
+      "url_hash": "1cffcc2ee1b9d124b11b4403668d629f2d6e33cebe98c27b038ca53e3fb8117b",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/Git-2b2b2b?logo=git&logoColor=white": {
+      "local_path": "assets/icons/badge-41f9267ab5cc.svg",
+      "url_hash": "41f9267ab5cc36801740e6df394357ec4dfb5edac820633d0f214edd5555e553",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/Docker-2b2b2b?logo=docker&logoColor=white": {
+      "local_path": "assets/icons/badge-b25cbc33cd6d.svg",
+      "url_hash": "b25cbc33cd6d8bb9f8640a3203e0d223808e76167d3021465c3d615ae1ee9d78",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/PyTest-2b2b2b?logo=pytest&logoColor=white": {
+      "local_path": "assets/icons/badge-20ff958c13f2.svg",
+      "url_hash": "20ff958c13f21740792881bb2864d706f773ba7bc683d22c7a7355d2166a35f5",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/pre--commit-2b2b2b?logo=pre-commit&logoColor=white": {
+      "local_path": "assets/icons/badge-f93c4f0d58df.svg",
+      "url_hash": "f93c4f0d58df283df5005747a7e2708ee4859267257776e2a62a12e1b079af3d",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/Ruff-2b2b2b": {
+      "local_path": "assets/icons/badge-0303af530689.svg",
+      "url_hash": "0303af53068939c4417c282e21cf2378244e0e413271ffb0a257778f8b52b74d",
+      "downloaded_at": "2026-07-10T03:02:37Z"
+    },
+    "https://img.shields.io/badge/ty-2b2b2b": {
+      "local_path": "assets/icons/badge-fd2a74eb2930.svg",
+      "url_hash": "fd2a74eb293070161204497f38faa167b021d7202366d1a96181c77dfed054cd",
+      "downloaded_at": "2026-07-10T03:02:38Z"
+    },
+    "https://img.shields.io/badge/uv-2b2b2b": {
+      "local_path": "assets/icons/badge-d75da3db4820.svg",
+      "url_hash": "d75da3db4820040e156c7cb99ee6afcbe1a89a5b0afc292f09a5ec7aacef274d",
+      "downloaded_at": "2026-07-10T03:02:38Z"
+    },
+    "https://img.shields.io/badge/TypeScript-2b2b2b?logo=typescript&logoColor=white": {
+      "local_path": "assets/icons/badge-6921d90ba286.svg",
+      "url_hash": "6921d90ba286fe167720f8cefbb735ddd926d350e60af0e941f8b09879825daf",
+      "downloaded_at": "2026-07-10T03:02:38Z"
+    },
+    "https://img.shields.io/badge/Next.js-2b2b2b?logo=nextdotjs&logoColor=white": {
+      "local_path": "assets/icons/badge-55e5c4c33cad.svg",
+      "url_hash": "55e5c4c33cad1c242f8516b9d9b9c3f8a857034be1eff3182dbf6101e0ff6507",
+      "downloaded_at": "2026-07-10T03:02:38Z"
+    },
+    "https://img.shields.io/badge/React-2b2b2b?logo=react&logoColor=white": {
+      "local_path": "assets/icons/badge-562adcfcc0ad.svg",
+      "url_hash": "562adcfcc0ada283a0f56d362ababe84591ecf4d65a88b6fe67e63e2484b27d1",
+      "downloaded_at": "2026-07-10T03:02:39Z"
+    },
+    "https://img.shields.io/badge/Redux-2b2b2b?logo=redux&logoColor=white": {
+      "local_path": "assets/icons/badge-2dfb6bf1878f.svg",
+      "url_hash": "2dfb6bf1878fec34432185ba71c41f1dafbe1d909277e2837278a5a3c3d8dd2e",
+      "downloaded_at": "2026-07-10T03:02:39Z"
+    },
+    "https://img.shields.io/badge/Tailwind%20CSS-2b2b2b?logo=tailwindcss&logoColor=white": {
+      "local_path": "assets/icons/badge-effffc54af1a.svg",
+      "url_hash": "effffc54af1a8df438df3a79b623d5f0e7c740fd6f5b4636d2a9b8d46a49c62f",
+      "downloaded_at": "2026-07-10T03:02:39Z"
+    },
+    "https://img.shields.io/badge/shadcn%2Fui-2b2b2b?logo=shadcnui&logoColor=white": {
+      "local_path": "assets/icons/badge-1b75ff87d692.svg",
+      "url_hash": "1b75ff87d692d48f0e10bd61f99a4f36a70051050ccb049ddd9c3e9eeef4152c",
+      "downloaded_at": "2026-07-10T03:02:39Z"
+    },
+    "https://img.shields.io/badge/Ruff-2b2b2b?logo=ruff&logoColor=white": {
+      "local_path": "assets/icons/badge-8adbe3a360d0.svg",
+      "url_hash": "8adbe3a360d05651100904dfea9956dd8961827151bfbd7d65b0bec9b532f8c3",
+      "downloaded_at": "2026-07-10T03:06:54Z"
+    },
+    "https://img.shields.io/badge/ty-2b2b2b?logo=ty&logoColor=white": {
+      "local_path": "assets/icons/badge-004792d6fda5.svg",
+      "url_hash": "004792d6fda576634828bd9635e8f69fd252fcb24ea3bc0085d2c869ddb1baa2",
+      "downloaded_at": "2026-07-10T03:06:54Z"
+    },
+    "https://img.shields.io/badge/uv-2b2b2b?logo=uv&logoColor=white": {
+      "local_path": "assets/icons/badge-0af1e55fb30c.svg",
+      "url_hash": "0af1e55fb30c8094148a98940bb2fdaaae0d46ac7f9a9a9445625e845c28bca8",
+      "downloaded_at": "2026-07-10T03:06:54Z"
     }
   }
 }

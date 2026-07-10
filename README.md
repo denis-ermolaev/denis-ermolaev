@@ -12,42 +12,42 @@
 ### Core Stack
 
 <div style="padding-bottom: 6px;">
-    <span style="line-height: 1;"><b>Backend:</b></span>
-    <img style="vertical-align: middle;" src="assets/icons/badge-74dc3f788c7b.svg" alt="Python">
-    <img style="vertical-align: middle;" src="assets/icons/badge-589fc2ebd456.svg" alt="FastAPI">
-    <img style="vertical-align: middle;" src="assets/icons/badge-d4bb4838b499.svg" alt="Django REST Framework">
-    <img style="vertical-align: middle;" src="assets/icons/badge-f6cd8d9704ef.svg" alt="Flask">
-    <img style="vertical-align: middle;" src="assets/icons/badge-a4d09a6a67f7.svg" alt="PostgreSQL">
+    <span><b>Backend:</b></span>
+    <img align="center" src="assets/icons/badge-74dc3f788c7b.svg" alt="Python">
+    <img align="center" src="assets/icons/badge-589fc2ebd456.svg" alt="FastAPI">
+    <img align="center" src="assets/icons/badge-d4bb4838b499.svg" alt="Django REST Framework">
+    <img align="center" src="assets/icons/badge-f6cd8d9704ef.svg" alt="Flask">
+    <img align="center" src="assets/icons/badge-a4d09a6a67f7.svg" alt="PostgreSQL">
 </div>
 
 <div style="padding-bottom: 6px;">
-    <span style="line-height: 1;"><b>Data Science:</b></span>
-    <img style="vertical-align: middle;" src="assets/icons/badge-2d29dfcb565c.svg" alt="Pandas">
-    <img style="vertical-align: middle;" src="assets/icons/badge-cc60bba7e13d.svg" alt="NumPy">
-    <img style="vertical-align: middle;" src="assets/icons/badge-3115bd32cd61.svg" alt="Scikit-Learn">
-    <img style="vertical-align: middle;" src="assets/icons/badge-f340730f3644.svg" alt="Visualization">
+    <span><b>Data Science:</b></span>
+    <img align="center" src="assets/icons/badge-2d29dfcb565c.svg" alt="Pandas">
+    <img align="center" src="assets/icons/badge-cc60bba7e13d.svg" alt="NumPy">
+    <img align="center" src="assets/icons/badge-3115bd32cd61.svg" alt="Scikit-Learn">
+    <img align="center" src="assets/icons/badge-f340730f3644.svg" alt="Visualization">
 </div>
 
 <div style="padding-bottom: 6px;">
-    <span style="line-height: 1;"><b>Tools:</b></span>
-    <img style="vertical-align: middle;" src="assets/icons/badge-1cffcc2ee1b9.svg" alt="Linux">
-    <img style="vertical-align: middle;" src="assets/icons/badge-41f9267ab5cc.svg" alt="Git">
-    <img style="vertical-align: middle;" src="assets/icons/badge-b25cbc33cd6d.svg" alt="Docker">
-    <img style="vertical-align: middle;" src="assets/icons/badge-20ff958c13f2.svg" alt="PyTest">
-    <img style="vertical-align: middle;" src="assets/icons/badge-f93c4f0d58df.svg" alt="pre-commit">
-    <img style="vertical-align: middle;" src="assets/icons/badge-8adbe3a360d0.svg" alt="Ruff">
-    <img style="vertical-align: middle;" src="assets/icons/badge-004792d6fda5.svg" alt="ty">
-    <img style="vertical-align: middle;" src="assets/icons/badge-0af1e55fb30c.svg" alt="uv">
+    <span><b>Tools:</b></span>
+    <img align="center" src="assets/icons/badge-1cffcc2ee1b9.svg" alt="Linux">
+    <img align="center" src="assets/icons/badge-41f9267ab5cc.svg" alt="Git">
+    <img align="center" src="assets/icons/badge-b25cbc33cd6d.svg" alt="Docker">
+    <img align="center" src="assets/icons/badge-20ff958c13f2.svg" alt="PyTest">
+    <img align="center" src="assets/icons/badge-f93c4f0d58df.svg" alt="pre-commit">
+    <img align="center" src="assets/icons/badge-8adbe3a360d0.svg" alt="Ruff">
+    <img align="center" src="assets/icons/badge-004792d6fda5.svg" alt="ty">
+    <img align="center" src="assets/icons/badge-0af1e55fb30c.svg" alt="uv">
 </div>
 
 <div style="padding-bottom: 6px;">
-    <span style="line-height: 1;"><b>Frontend:</b></span>
-    <img style="vertical-align: middle;" src="assets/icons/badge-6921d90ba286.svg" alt="TypeScript">
-    <img style="vertical-align: middle;" src="assets/icons/badge-55e5c4c33cad.svg" alt="Next.js">
-    <img style="vertical-align: middle;" src="assets/icons/badge-562adcfcc0ad.svg" alt="React">
-    <img style="vertical-align: middle;" src="assets/icons/badge-2dfb6bf1878f.svg" alt="Redux">
-    <img style="vertical-align: middle;" src="assets/icons/badge-effffc54af1a.svg" alt="Tailwind CSS">
-    <img style="vertical-align: middle;" src="assets/icons/badge-1b75ff87d692.svg" alt="shadcn/ui">
+    <span><b>Frontend:</b></span>
+    <img align="center" src="assets/icons/badge-6921d90ba286.svg" alt="TypeScript">
+    <img align="center" src="assets/icons/badge-55e5c4c33cad.svg" alt="Next.js">
+    <img align="center" src="assets/icons/badge-562adcfcc0ad.svg" alt="React">
+    <img align="center" src="assets/icons/badge-2dfb6bf1878f.svg" alt="Redux">
+    <img align="center" src="assets/icons/badge-effffc54af1a.svg" alt="Tailwind CSS">
+    <img align="center" src="assets/icons/badge-1b75ff87d692.svg" alt="shadcn/ui">
 </div>
 
 <br>

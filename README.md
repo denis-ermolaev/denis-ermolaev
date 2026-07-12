@@ -57,17 +57,11 @@
 
 ```text
 💬 Programming Languages: 
-Markdown                 5 hrs 58 mins       ██████████░░░░░░░░░░░░░░░   41.19 % 
-Python                   4 hrs 27 mins       ████████░░░░░░░░░░░░░░░░░   30.70 % 
-YAML                     1 hr 7 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.70 % 
-Makefile                 1 hr 4 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.36 % 
-Other                    49 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.65 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-django-procurement-api   12 hrs 23 mins      █████████████████████░░░░   85.34 % 
-wiki                     46 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.34 % 
-GTD                      37 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 % 
-final_qualification_work 23 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.69 % 
-first                    10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.19 % 
+No Activity Tracked This Week
 ```
+
+
 <!--END_SECTION:waka-->

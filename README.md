@@ -57,10 +57,16 @@
 
 ```text
 💬 Programming Languages: 
-No Activity Tracked This Week
+TypeScript               16 hrs 37 mins      ██████████████░░░░░░░░░░░   54.78 % 
+Markdown                 9 hrs 8 mins        ████████░░░░░░░░░░░░░░░░░   30.12 % 
+Python                   2 hrs 26 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.07 % 
+JSON                     1 hr 5 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.61 % 
+CSS                      37 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.06 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+time-capsule-frontend    18 hrs 46 mins      ███████████████░░░░░░░░░░   61.86 % 
+denis-ermolaev           11 hrs 24 mins      █████████░░░░░░░░░░░░░░░░   37.59 % 
+time-capsule-backend     10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.55 % 
 ```
 
 

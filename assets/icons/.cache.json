@@ -210,6 +210,11 @@
       "local_path": "assets/icons/badge-0af1e55fb30c.svg",
       "url_hash": "0af1e55fb30c8094148a98940bb2fdaaae0d46ac7f9a9a9445625e845c28bca8",
       "downloaded_at": "2026-07-10T03:06:54Z"
+    },
+    "https://img.shields.io/badge/EMAIL-me%40denisermolaev.com-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000": {
+      "local_path": "assets/icons/badge-47b325042591.svg",
+      "url_hash": "47b325042591115fe8a63727ba43e54a52b427d81d5989f3dc05de89b9e47455",
+      "downloaded_at": "2026-07-14T21:58:56Z"
     }
   }
 }

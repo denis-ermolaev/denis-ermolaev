@@ -4,7 +4,7 @@
 </div>
 
 <div>
-<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/EMAIL-me%40denisermolaev.com-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" style="display: block;" alt="email"></a><a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/RESUME-000000?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000" style="display: block;" alt="resume"></a>
+<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/EMAIL-me%40denisermolaev.com-2b2b2b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" style="display: block;" alt="email"></a><a href="https://denisermolaev.com/documents/resume.pdf" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="https://img.shields.io/badge/RESUME-000000?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=000000" style="display: block;" alt="resume"></a>
 </div>
 
 </div>

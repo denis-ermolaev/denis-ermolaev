@@ -4,7 +4,7 @@
 </div>
 
 <div>
-<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-47b325042591.svg" style="display: block;" alt="email"></a><a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-23ff642881dc.svg" style="display: block;" alt="resume"></a>
+<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-47b325042591.svg" style="display: block;" alt="email"></a><a href="https://denisermolaev.com/documents/resume.pdf" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-23ff642881dc.svg" style="display: block;" alt="resume"></a>
 </div>
 
 </div>

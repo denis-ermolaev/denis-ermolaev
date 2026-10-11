@@ -4,7 +4,7 @@
 </div>
 
 <div>
-<a href="mailto:me@denisermolaev.com" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-47b325042591.svg" style="display: block;" alt="email"></a><a href="https://rxresu.me/denis-ermolaev/resume-python-developer" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-23ff642881dc.svg" style="display: block;" alt="resume"></a>
+<a href="mailto:denis-ermolaev@internet.ru" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-47b325042591.svg" style="display: block;" alt="email"></a><a href="https://denisermolaev.com/documents/resume.pdf" style="text-decoration: none;font-size: 0; line-height: 0;display: inline-block; overflow: hidden;"><img src="assets/icons/badge-23ff642881dc.svg" style="display: block;" alt="resume"></a>
 </div>
 
 </div>
@@ -53,21 +53,4 @@
 <br>
 
 <!--START_SECTION:waka-->
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-TypeScript               18 hrs 14 mins      █████████████░░░░░░░░░░░░   51.33 % 
-Markdown                 11 hrs 32 mins      ████████░░░░░░░░░░░░░░░░░   32.45 % 
-Python                   2 hrs 26 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   06.89 % 
-JSON                     1 hr 6 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.13 % 
-YAML                     51 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.43 % 
-
-🐱‍💻 Projects: 
-time-capsule-frontend    20 hrs 51 mins      ███████████████░░░░░░░░░░   58.67 % 
-denis-ermolaev           11 hrs 8 mins       ████████░░░░░░░░░░░░░░░░░   31.34 % 
-time-capsule-backend     3 hrs 33 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.99 % 
-```
-
-
 <!--END_SECTION:waka-->

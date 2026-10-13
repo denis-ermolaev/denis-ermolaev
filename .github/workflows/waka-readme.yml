@@ -2,8 +2,11 @@ name: Wakatime Stats
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '30 18 * * *' # Каждый день в 18:30
+    - cron: '30 18 * * *' # Каждый день в 18:30 UTC
 
 jobs:
   update-readme:
@@ -23,6 +26,7 @@ jobs:
           SHOW_DAYS_OF_WEEK: "False"
           SHOW_UPDATED_DATE: "False"
           SHOW_LINES_OF_CODE: "False"
+          SHOW_AI_CODE_TIME: "False"
           
           SHOW_OS: "False"
           SHOW_EDITORS: "False"

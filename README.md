@@ -53,4 +53,27 @@
 <br>
 
 <!--START_SECTION:waka-->
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+YAML                     53 mins             ████████████████░░░░░░░░░   64.06 % 
+Markdown                 16 mins             █████░░░░░░░░░░░░░░░░░░░░   20.21 % 
+TypeScript               9 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.71 % 
+Docker                   2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.29 % 
+Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 % 
+
+🐱‍💻 Projects: 
+denisermolaev.com        46 mins             ██████████████░░░░░░░░░░░   55.29 % 
+realtor-landing          30 mins             █████████░░░░░░░░░░░░░░░░   35.76 % 
+denis-ermolaev           7 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.95 % 
+```
+
+🤖 **AI Coding This Week** 
+
+```text
+No AI Coding Activity Tracked This Week
+```
+
+
 <!--END_SECTION:waka-->

@@ -57,16 +57,11 @@
 
 ```text
 💬 Programming Languages: 
-YAML                     1 hr 2 mins         █████████████████░░░░░░░░   67.53 % 
-Markdown                 16 mins             █████░░░░░░░░░░░░░░░░░░░░   18.26 % 
-TypeScript               9 mins              ███░░░░░░░░░░░░░░░░░░░░░░   10.59 % 
-Docker                   2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.97 % 
-Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 % 
+YAML                     8 mins              ██████████████░░░░░░░░░░░   54.38 % 
+Markdown                 7 mins              ███████████░░░░░░░░░░░░░░   45.62 % 
 
 🐱‍💻 Projects: 
-denisermolaev.com        46 mins             ████████████░░░░░░░░░░░░░   49.96 % 
-realtor-landing          30 mins             ████████░░░░░░░░░░░░░░░░░   32.31 % 
-denis-ermolaev           16 mins             ████░░░░░░░░░░░░░░░░░░░░░   17.73 % 
+denis-ermolaev           16 mins             █████████████████████████   100.00 % 
 ```
 
 

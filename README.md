@@ -57,11 +57,12 @@
 
 ```text
 💬 Programming Languages: 
-YAML                     8 mins              ██████████████░░░░░░░░░░░   54.38 % 
-Markdown                 7 mins              ███████████░░░░░░░░░░░░░░   45.62 % 
+YAML                     8 mins              ███████████████████████░░   91.14 % 
+TypeScript               0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   08.86 % 
 
 🐱‍💻 Projects: 
-denis-ermolaev           16 mins             █████████████████████████   100.00 % 
+denis-ermolaev           8 mins              ███████████████████████░░   91.14 % 
+denisermolaev.com        0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   08.86 % 
 ```
 
 

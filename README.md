@@ -57,12 +57,15 @@
 
 ```text
 💬 Programming Languages: 
-YAML                     8 mins              ███████████████████████░░   91.14 % 
-TypeScript               0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   08.86 % 
+Makefile                 1 hr 49 mins        ██████░░░░░░░░░░░░░░░░░░░   24.91 % 
+Python                   1 hr 40 mins        ██████░░░░░░░░░░░░░░░░░░░   22.80 % 
+Markdown                 1 hr 12 mins        ████░░░░░░░░░░░░░░░░░░░░░   16.51 % 
+Docker                   1 hr 3 mins         ████░░░░░░░░░░░░░░░░░░░░░   14.44 % 
+YAML                     54 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.49 % 
 
 🐱‍💻 Projects: 
-denis-ermolaev           8 mins              ███████████████████████░░   91.14 % 
-denisermolaev.com        0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   08.86 % 
+kvitto_test_task         7 hrs 10 mins       ████████████████████████░   97.96 % 
+denis-ermolaev           8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.04 % 
 ```
 
 

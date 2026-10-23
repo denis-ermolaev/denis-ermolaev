@@ -57,15 +57,15 @@
 
 ```text
 💬 Programming Languages: 
-Python                   8 hrs 47 mins       ██████████░░░░░░░░░░░░░░░   40.73 % 
-Markdown                 4 hrs 18 mins       █████░░░░░░░░░░░░░░░░░░░░   19.95 % 
-Makefile                 3 hrs 37 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.80 % 
-YAML                     1 hr 44 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.06 % 
-Docker                   1 hr 25 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.62 % 
+Python                   9 hrs 51 mins       █████████░░░░░░░░░░░░░░░░   34.77 % 
+Markdown                 5 hrs 11 mins       █████░░░░░░░░░░░░░░░░░░░░   18.28 % 
+Makefile                 3 hrs 55 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.86 % 
+YAML                     2 hrs 28 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+Docker                   1 hr 46 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.23 % 
 
 🐱‍💻 Projects: 
-kvitto_test_task         16 hrs 14 mins      ███████████████████░░░░░░   75.31 % 
-backend                  5 hrs 19 mins       ██████░░░░░░░░░░░░░░░░░░░   24.69 % 
+kvitto_test_task         16 hrs 14 mins      ██████████████░░░░░░░░░░░   57.26 % 
+backend                  12 hrs 7 mins       ███████████░░░░░░░░░░░░░░   42.74 % 
 ```
 
 

@@ -57,16 +57,17 @@
 
 ```text
 💬 Programming Languages: 
-Python                   9 hrs 51 mins       ████████░░░░░░░░░░░░░░░░░   33.99 % 
-Markdown                 5 hrs 22 mins       █████░░░░░░░░░░░░░░░░░░░░   18.54 % 
-Makefile                 3 hrs 55 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.54 % 
-YAML                     2 hrs 28 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.50 % 
-Docker                   1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.16 % 
+Python                   10 hrs 8 mins       ████████░░░░░░░░░░░░░░░░░   32.20 % 
+Markdown                 6 hrs 24 mins       █████░░░░░░░░░░░░░░░░░░░░   20.35 % 
+Makefile                 4 hrs 4 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.93 % 
+YAML                     2 hrs 43 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.65 % 
+Docker                   1 hr 47 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.68 % 
 
 🐱‍💻 Projects: 
-kvitto_test_task         16 hrs 14 mins      ██████████████░░░░░░░░░░░   55.96 % 
-backend                  12 hrs 7 mins       ██████████░░░░░░░░░░░░░░░   41.77 % 
-workspace                39 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.27 % 
+kvitto_test_task         16 hrs 14 mins      █████████████░░░░░░░░░░░░   51.56 % 
+backend                  12 hrs 42 mins      ██████████░░░░░░░░░░░░░░░   40.32 % 
+workspace                2 hrs 23 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   07.57 % 
+orientask-backend        10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.56 % 
 ```
 
 

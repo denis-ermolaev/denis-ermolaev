@@ -57,17 +57,17 @@
 
 ```text
 💬 Programming Languages: 
-Markdown                 7 hrs 21 mins       █████████░░░░░░░░░░░░░░░░   35.49 % 
-Python                   7 hrs 7 mins        █████████░░░░░░░░░░░░░░░░   34.32 % 
-Other                    1 hr 55 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.31 % 
-TypeScript               1 hr 38 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.88 % 
-OASv2-json               1 hr 18 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.28 % 
+Python                   7 hrs 55 mins       █████████░░░░░░░░░░░░░░░░   37.89 % 
+Markdown                 7 hrs 10 mins       █████████░░░░░░░░░░░░░░░░   34.24 % 
+Other                    1 hr 45 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.37 % 
+TypeScript               1 hr 38 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 % 
+OASv2-json               1 hr 15 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.04 % 
 
 🐱‍💻 Projects: 
-orientask-backend        13 hrs 16 mins      ████████████████░░░░░░░░░   64.03 % 
-workspace                4 hrs 55 mins       ██████░░░░░░░░░░░░░░░░░░░   23.76 % 
-denisermolaev.com        1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.62 % 
-backend                  44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.59 % 
+orientask-backend        14 hrs 7 mins       █████████████████░░░░░░░░   67.48 % 
+workspace                4 hrs 16 mins       █████░░░░░░░░░░░░░░░░░░░░   20.40 % 
+denisermolaev.com        1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.57 % 
+backend                  44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.55 % 
 ```
 
 
